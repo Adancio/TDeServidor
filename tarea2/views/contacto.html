@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contacto · Adán Juárez</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body>
+
+        <nav>
+            <a href="/" class="nav-brand">Adán Juárez</a>
+            <div class="nav-links">
+                <a href="/">Inicio</a>
+                <a href="/contacto" class="active">Contacto</a>
+            </div>
+        </nav>
+
+        <header class="hero-sm">
+            <h1>Hablemos</h1>
+            <p>Cuéntame tu proyecto y te respondo a la brevedad.</p>
+        </header>
+
+        <main>
+            <div class="form-wrapper">
+                <div class="form-card">
+
+                    <h2>Envíame un mensaje</h2>
+                    <p class="form-subtitle">Todos los campos son obligatorios.</p>
+
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                          <input type="hidden" name="access_key" value="133b1b42-5cc5-478e-90bc-c96969027948">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                class="form-control"
+                                placeholder="Tu nombre completo"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico</label>
+                            <input
+                                type="email"
+                                id="correo"
+                                name="correo"
+                                class="form-control"
+                                placeholder="tu@correo.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea
+                                id="mensaje"
+                                name="mensaje"
+                                class="form-control"
+                                placeholder="¿En qué te puedo ayudar?"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Enviar mensaje →</button>
+
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            © 2026 Adán Juárez · Hecho con Node.js &amp; Express
+        </footer>
+
+    </body>
+</html>
