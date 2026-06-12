@@ -17,5 +17,7 @@ router.post('/contacto', (req, res) => {});
 */
 
 router.get('/confirmar', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/conf.html'));
+    res.sendFile(path.join(__dirname, '../views/confirmar.html'));
 });
+
+module.exports = router;
